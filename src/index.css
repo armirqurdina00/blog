@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://css.gg/trash.css');
+
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App{
+  height: 100vh;
+  overflow: auto;
+}
+
+.navbar{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1{
+  margin: 20px;
+  color: dodgerblue;
+  font-size: 24px;
+}
+
+.links a{
+  font-size: 18px;
+  margin: 20px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover{
+  color: dodgerblue;
+}
+
+.content{
+  margin: 40px auto;
+}
+
+.home{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-body{
+  white-space: pre-wrap;
+}
+
+/* BLOG PREVIEW */
+
+.blog-preview{
+  padding: 20px;
+  margin: 10px 0;
+  position: relative;
+  /* box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) */
+}
+
+.blog-preview h2{
+  color: dodgerblue;
+  margin: 0;
+}
+
+.blog-preview p{
+  margin: 0
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3)
+}
+
+/* BLOG DETAILS */
+
+.blog-details{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-preview a{
+  text-decoration: none;
+  color: black
+}
+
+.blog-details h2{
+  color: dodgerblue;
+  margin: 0
+}
+
+.blog-details p{
+  font-style: italic;
+}
+
+.blog-details article {
+  position: relative;
+  padding: 40px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/*ADD BLOG */
+
+.add-blog{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.add-blog h2{
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.add-blog label{
+  text-align: left;
+  display: block;
+  font-weight: 500;
+}
+
+.add-blog input, .add-blog textarea, .add-blog select{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.add-blog textarea{
+  resize: vertical;
+  height: 200px;
+  white-space: pre-wrap;
+}
+
+.add-blog button, .blog-details button{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  background: dodgerblue;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.blog-details .delete-btn{
+  padding: 5px 15px;
+  float: right;
+}
+
+.blog-details .delete-btn:hover{
+  background: crimson;
+}
+
+/* LOADING SCREEN */
+
+.loading-screen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.loader{
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* DARK MODE */
+
+#dark{
+  background-color: rgb(26, 31, 48);
+  color: white;
+}
+
+#white-font{
+  color: white;
+}
+
+.navbar #white-font:hover{
+  color: dodgerblue;
+}
+/* 
+#light-box{
+  box-shadow: 1px 3px 5px rgb(255, 255, 255, 0.2)
+}
+ */
+
+.blog-preview-container #light-box:hover{
+  box-shadow: 1px 3px 5px rgb(255, 255, 255, 0.2)
+}
+
+#dark-bg{
+  background: none;
+  color: white;
+}
